@@ -10,10 +10,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 /**
- * Class defines the first question on Summer Olympics with the possible answers
+ * Class defines the forth question on Summer Olympics with the possible answers
  * It sets the correct answer and updates the score if this is selected
  */
-public class SummerOlympicsQ1 extends AppCompatActivity {
+public class SummerOlympicsQ4 extends AppCompatActivity {
 
     private QuizDataManager quizDataManager;
     private boolean gotRightAnswer;
@@ -35,15 +35,15 @@ public class SummerOlympicsQ1 extends AppCompatActivity {
      */
     public void setUpInitialUI() {
 
-        String questionOne = quizDataManager.questionsSummerGames[0][0];
-        String answerOne = quizDataManager.questionsSummerGames[0][1];
-        String answerTwo = quizDataManager.questionsSummerGames[0][2];
-        String answerThree = quizDataManager.questionsSummerGames[0][3];
-        String answerFour = quizDataManager.questionsSummerGames[0][4];
-        String answerFive = quizDataManager.questionsSummerGames[0][5];
+        String questionOne = quizDataManager.questionsSummerGames[3][0];
+        String answerOne = quizDataManager.questionsSummerGames[3][1];
+        String answerTwo = quizDataManager.questionsSummerGames[3][2];
+        String answerThree = quizDataManager.questionsSummerGames[3][3];
+        String answerFour = quizDataManager.questionsSummerGames[3][4];
+        String answerFive = quizDataManager.questionsSummerGames[3][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText("Question 1:");
+        questionLabel.setText("Question 4:");
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionOne);
@@ -65,14 +65,14 @@ public class SummerOlympicsQ1 extends AppCompatActivity {
     }
 
     /**
-     * set answer 3 as the correct answer: expect it to be checked
+     * set answer 2 as the correct answer: expect it to be checked
      */
     public void setCorrectAnswer() {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.answer_3) {
+                if (checkedId == R.id.answer_2) {
                     gotRightAnswer = true;
                 }
             }
@@ -106,7 +106,7 @@ public class SummerOlympicsQ1 extends AppCompatActivity {
      * go to the next question
      */
     public void moveToNextQuestion(View v) {
-        Intent intent = new Intent(this, SummerOlympicsQ2.class);
+        Intent intent = new Intent(this, SummerOlympicsQ5.class);
         startActivity(intent);
     }
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quiz_start_page_bg"
-    tools:context=".SummerOlympicsQ1">
+    tools:context=".SummerOlympicsQ4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -136,7 +136,6 @@
             android:layout_marginTop="17dp"
             android:background="#00000000"
             android:src="@drawable/next_btn" />
-
 
     </LinearLayout>
 

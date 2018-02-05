@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quiz_start_page_bg"
-    tools:context=".SummerOlympicsQ2">
+    tools:context=".SummerOlympicsQuizResults">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,45 +20,14 @@
             android:textColor="#0885c2"
             android:textSize="24sp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
+        <ImageView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
-
-            <ImageView
-                android:id="@+id/question_area"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/question_area" />
-
-            <TextView
-                android:id="@+id/question_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="57dp"
-                android:layout_marginStart="57dp"
-                android:paddingTop="10dp"
-                android:text="Question"
-                android:textStyle="bold"
-                android:textSize="17sp"/>
-
-            <TextView
-                android:id="@+id/question_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="57dp"
-                android:layout_marginStart="57dp"
-                android:paddingTop="6dp"
-                android:text="Question..."
-                android:layout_below="@id/question_label"
-                android:textStyle="bold"
-                android:textSize="15sp"/>
-
-        </RelativeLayout>
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/question_area" />
 
         <ImageView
-            android:id="@+id/answer_area"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -66,7 +35,6 @@
             android:src="@drawable/answers_area" />
 
         <CheckBox
-            android:id="@+id/answer_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -75,49 +43,48 @@
             android:text="answer 1.1" />
 
         <CheckBox
-            android:id="@+id/answer_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
-            android:text="answer 1.2" />
+            android:text="answer 1.1" />
 
         <CheckBox
-            android:id="@+id/answer_3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="28dp"
-            android:text="answer 1.3" />
+            android:text="answer 1.1" />
 
         <CheckBox
-            android:id="@+id/answer_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="23dp"
-            android:text="answer 1.4" />
+            android:text="answer 1.1" />
 
         <CheckBox
-            android:id="@+id/answer_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginStart="50dp"
             android:layout_marginTop="27dp"
-            android:text="answer 1.5" />
+            android:text="answer 1.1" />
 
         <ImageButton
-            android:id="@+id/ask_next_question_btn"
+            android:id="@+id/restart_quiz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="16dp"
             android:background="#00000000"
             android:src="@drawable/next_btn" />
+
+        <!--REMEMBER TO CHANGE BUTTON-->
+
 
     </LinearLayout>
 

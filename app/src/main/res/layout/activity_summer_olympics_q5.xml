@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quiz_start_page_bg"
-    tools:context=".SummerOlympicsQ2">
+    tools:context=".SummerOlympicsQ5">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -111,7 +111,7 @@
             android:text="answer 1.5" />
 
         <ImageButton
-            android:id="@+id/ask_next_question_btn"
+            android:id="@+id/go_to_quiz_results_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

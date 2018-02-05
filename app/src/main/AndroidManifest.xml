@@ -19,7 +19,11 @@
         </activity>
         <activity android:name=".SummerOlympicsQ1" />
         <activity android:name=".WinterOlympicsQ1" />
-        <activity android:name=".SummerOlympicsQ2"></activity>
+        <activity android:name=".SummerOlympicsQ2" />
+        <activity android:name=".SummerOlympicsQuizResults" />
+        <activity android:name=".SummerOlympicsQ3" />
+        <activity android:name=".SummerOlympicsQ5" />
+        <activity android:name=".SummerOlympicsQ4"></activity>
     </application>
 
 </manifest>
