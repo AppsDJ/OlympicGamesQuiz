@@ -43,7 +43,7 @@ public class SummerOlympicsQ1 extends AppCompatActivity {
         String answerFive = quizDataManager.questionsSummerGames[0][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText("Question 1:");
+        questionLabel.setText(R.string.question1);
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionOne);

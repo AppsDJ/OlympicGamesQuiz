@@ -31,7 +31,7 @@ public class SummerOlympicsQ3 extends AppCompatActivity {
     }
 
     /**
-     * set up the UI for the first question with its answers
+     * set up the UI for the third question with its answers
      */
     public void setUpInitialUI() {
 
@@ -43,7 +43,7 @@ public class SummerOlympicsQ3 extends AppCompatActivity {
         String answerFive = quizDataManager.questionsSummerGames[2][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText("Question 3:");
+        questionLabel.setText(R.string.question3);
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionOne);

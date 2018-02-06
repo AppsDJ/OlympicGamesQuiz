@@ -39,7 +39,7 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
     }
 
     /**
-     * set up the UI for the first question with its answers
+     * set up the UI for the fifth question with its answers
      */
     public void setUpInitialUI() {
 
@@ -51,7 +51,7 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
         String answerFive = quizDataManager.questionsSummerGames[4][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText("Question 5:");
+        questionLabel.setText(R.string.question5);
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionTwo);
@@ -105,7 +105,6 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
         if (answerOneIsChecked && answerThreeIsChecked) {
             quizDataManager.incrementScore();
         }
-        Log.v("SCORE AFTER 2", "Sore in Q2 is: " + quizDataManager.quizScore);
     }
 
     /**
@@ -117,7 +116,6 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 updateScore();
-                Log.v("ARE CHECKED", "are checked-: " + answerOneIsChecked + " " + answerThreeIsChecked);
                 showQuizResults(v);
             }
         });

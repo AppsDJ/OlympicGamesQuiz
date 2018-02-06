@@ -11,10 +11,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
- * Class defines the second question on Summer Olympics with the possible answers
+ * Class defines the fifth question on Summer Olympics with the possible answers
  * It sets the correct answer and updates the score if this is selected
  */
-public class SummerOlympicsQ2 extends AppCompatActivity {
+public class WinterOlympicsQ5 extends AppCompatActivity {
 
     private CheckBox answerOneValue;
     private CheckBox answerTwoValue;
@@ -28,28 +28,30 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summer_olympics_q2);
+        setContentView(R.layout.activity_winter_olympics_q5);
+
+        // make data available from the Data Manager
         quizDataManager = (QuizDataManager) getApplication();
 
         setUpInitialUI();
         setCorrectAnswers();
-        setUpMoveToNextQuestion();
+        setUpMoveToQuizResults();
     }
 
     /**
-     * set up the UI for the second question with its answers
+     * set up the UI for the fifth question with its answers
      */
     public void setUpInitialUI() {
 
-        String questionTwo = quizDataManager.questionsSummerGames[1][0];
-        String answerOne = quizDataManager.questionsSummerGames[1][1];
-        String answerTwo = quizDataManager.questionsSummerGames[1][2];
-        String answerThree = quizDataManager.questionsSummerGames[1][3];
-        String answerFour = quizDataManager.questionsSummerGames[1][4];
-        String answerFive = quizDataManager.questionsSummerGames[1][5];
+        String questionTwo = quizDataManager.questionsWinterGames[4][0];
+        String answerOne = quizDataManager.questionsWinterGames[4][1];
+        String answerTwo = quizDataManager.questionsWinterGames[4][2];
+        String answerThree = quizDataManager.questionsWinterGames[4][3];
+        String answerFour = quizDataManager.questionsWinterGames[4][4];
+        String answerFive = quizDataManager.questionsWinterGames[4][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText(R.string.question2);
+        questionLabel.setText(R.string.question5);
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionTwo);
@@ -103,29 +105,27 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
         if (answerOneIsChecked && answerThreeIsChecked) {
             quizDataManager.incrementScore();
         }
-        Log.v("SCORE AFTER 2", "Sore in Q2 is: " + quizDataManager.quizScore);
     }
 
     /**
-     * set up button to move to the next question
+     * set up button to move to quiz results
      */
-    public void setUpMoveToNextQuestion() {
-        ImageButton askNextQuestionBtn = (ImageButton) findViewById(R.id.ask_next_question_btn);
-        askNextQuestionBtn.setOnClickListener(new View.OnClickListener() {
+    public void setUpMoveToQuizResults() {
+        ImageButton goToQuizResultsBtn = (ImageButton) findViewById(R.id.go_to_quiz_results_btn);
+        goToQuizResultsBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 updateScore();
-                Log.v("ARE CHECKED", "are checked-: " + answerOneIsChecked + " " + answerThreeIsChecked);
-                moveToNextQuestion(v);
+                showQuizResults(v);
             }
         });
     }
 
     /**
-     * go to the next question
+     * go to the quiz results
      */
-    public void moveToNextQuestion(View v) {
-        Intent intent = new Intent(this, SummerOlympicsQ3.class);
+    public void showQuizResults(View v) {
+        Intent intent = new Intent(this, WinterOlympicsQuizResults.class);
         startActivity(intent);
     }
 }

@@ -10,10 +10,10 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 /**
- * Class defines the forth question on Summer Olympics with the possible answers
+ * Class defines the third question on Winter Olympics with the possible answers
  * It sets the correct answer and updates the score if this is selected
  */
-public class SummerOlympicsQ4 extends AppCompatActivity {
+public class WinterOlympicsQ3 extends AppCompatActivity {
 
     private QuizDataManager quizDataManager;
     private boolean gotRightAnswer;
@@ -21,7 +21,7 @@ public class SummerOlympicsQ4 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summer_olympics_q1);
+        setContentView(R.layout.activity_winter_olympics_q3);
         quizDataManager = (QuizDataManager) getApplication();
         gotRightAnswer = false;
 
@@ -31,19 +31,19 @@ public class SummerOlympicsQ4 extends AppCompatActivity {
     }
 
     /**
-     * set up the UI for the fourth question with its answers
+     * set up the UI for the third question with its answers
      */
     public void setUpInitialUI() {
 
-        String questionOne = quizDataManager.questionsSummerGames[3][0];
-        String answerOne = quizDataManager.questionsSummerGames[3][1];
-        String answerTwo = quizDataManager.questionsSummerGames[3][2];
-        String answerThree = quizDataManager.questionsSummerGames[3][3];
-        String answerFour = quizDataManager.questionsSummerGames[3][4];
-        String answerFive = quizDataManager.questionsSummerGames[3][5];
+        String questionOne = quizDataManager.questionsWinterGames[2][0];
+        String answerOne = quizDataManager.questionsWinterGames[2][1];
+        String answerTwo = quizDataManager.questionsWinterGames[2][2];
+        String answerThree = quizDataManager.questionsWinterGames[2][3];
+        String answerFour = quizDataManager.questionsWinterGames[2][4];
+        String answerFive = quizDataManager.questionsWinterGames[2][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
-        questionLabel.setText(R.string.question4);
+        questionLabel.setText(R.string.question3);
 
         TextView questionValue = (TextView) findViewById(R.id.question_value);
         questionValue.setText(questionOne);
@@ -65,14 +65,14 @@ public class SummerOlympicsQ4 extends AppCompatActivity {
     }
 
     /**
-     * set answer 2 as the correct answer: expect it to be checked
+     * set answer 4 as the correct answer: expect it to be checked
      */
     public void setCorrectAnswer() {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radio_group);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.answer_2) {
+                if (checkedId == R.id.answer_4) {
                     gotRightAnswer = true;
                 }
             }
@@ -106,7 +106,7 @@ public class SummerOlympicsQ4 extends AppCompatActivity {
      * go to the next question
      */
     public void moveToNextQuestion(View v) {
-        Intent intent = new Intent(this, SummerOlympicsQ5.class);
+        Intent intent = new Intent(this, WinterOlympicsQ4.class);
         startActivity(intent);
     }
 }

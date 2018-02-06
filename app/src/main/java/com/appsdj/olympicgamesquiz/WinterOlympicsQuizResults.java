@@ -11,14 +11,14 @@ import android.widget.ImageButton;
  * Class displays the quiz score and the number of the incorrectly answered questions
  * It also give the choice to go back to the start page to replay quiz
  */
-public class SummerOlympicsQuizResults extends AppCompatActivity {
+public class WinterOlympicsQuizResults extends AppCompatActivity {
 
     public QuizDataManager quizDataManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summer_olympics_quiz_results);
+        setContentView(R.layout.activity_winter_olympics_quiz_results);
 
         quizDataManager = (QuizDataManager) getApplication();
         Log.v("FINAL SCORE", "Sore in Q2 is: " + quizDataManager.quizScore);

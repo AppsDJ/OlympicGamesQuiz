@@ -11,10 +11,10 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 /**
- * Class defines the second question on Summer Olympics with the possible answers
+ * Class defines the second question on Winter Olympics with the possible answers
  * It sets the correct answer and updates the score if this is selected
  */
-public class SummerOlympicsQ2 extends AppCompatActivity {
+public class WinterOlympicsQ2 extends AppCompatActivity {
 
     private CheckBox answerOneValue;
     private CheckBox answerTwoValue;
@@ -28,7 +28,8 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summer_olympics_q2);
+        setContentView(R.layout.activity_winter_olympics_q2);
+
         quizDataManager = (QuizDataManager) getApplication();
 
         setUpInitialUI();
@@ -41,12 +42,12 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
      */
     public void setUpInitialUI() {
 
-        String questionTwo = quizDataManager.questionsSummerGames[1][0];
-        String answerOne = quizDataManager.questionsSummerGames[1][1];
-        String answerTwo = quizDataManager.questionsSummerGames[1][2];
-        String answerThree = quizDataManager.questionsSummerGames[1][3];
-        String answerFour = quizDataManager.questionsSummerGames[1][4];
-        String answerFive = quizDataManager.questionsSummerGames[1][5];
+        String questionTwo = quizDataManager.questionsWinterGames[1][0];
+        String answerOne = quizDataManager.questionsWinterGames[1][1];
+        String answerTwo = quizDataManager.questionsWinterGames[1][2];
+        String answerThree = quizDataManager.questionsWinterGames[1][3];
+        String answerFour = quizDataManager.questionsWinterGames[1][4];
+        String answerFive = quizDataManager.questionsWinterGames[1][5];
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
         questionLabel.setText(R.string.question2);
@@ -125,7 +126,7 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
      * go to the next question
      */
     public void moveToNextQuestion(View v) {
-        Intent intent = new Intent(this, SummerOlympicsQ3.class);
+        Intent intent = new Intent(this, WinterOlympicsQ3.class);
         startActivity(intent);
     }
 }

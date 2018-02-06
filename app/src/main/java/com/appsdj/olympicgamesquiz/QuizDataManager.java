@@ -74,26 +74,26 @@ public class QuizDataManager extends Application {
         questionsWinterGames[1][4] = "Q2w-a4: ";
         questionsWinterGames[1][5] = "Q2w-a5: ";
 
-        questionsWinterGames[0][0] = "Q4w: ";
-        questionsWinterGames[0][1] = "Q4w-a1: ";
-        questionsWinterGames[0][2] = "Q4w-a2: ";
-        questionsWinterGames[0][3] = "Q4w-a3: ";
-        questionsWinterGames[0][4] = "Q4w-a4: ";
-        questionsWinterGames[0][5] = "Q4w-a5: ";
+        questionsWinterGames[2][0] = "Q4w: ";
+        questionsWinterGames[2][1] = "Q4w-a1: ";
+        questionsWinterGames[2][2] = "Q4w-a2: ";
+        questionsWinterGames[2][3] = "Q4w-a3: ";
+        questionsWinterGames[2][4] = "Q4w-a4: ";
+        questionsWinterGames[2][5] = "Q4w-a5: ";
 
-        questionsWinterGames[0][0] = "Q4w: ";
-        questionsWinterGames[0][1] = "Q4w-a1: ";
-        questionsWinterGames[0][2] = "Q4w-a2: ";
-        questionsWinterGames[0][3] = "Q4w-a3: ";
-        questionsWinterGames[0][4] = "Q4w-a4: ";
-        questionsWinterGames[0][5] = "Q4w-a5: ";
+        questionsWinterGames[3][0] = "Q4w: ";
+        questionsWinterGames[3][1] = "Q4w-a1: ";
+        questionsWinterGames[3][2] = "Q4w-a2: ";
+        questionsWinterGames[3][3] = "Q4w-a3: ";
+        questionsWinterGames[3][4] = "Q4w-a4: ";
+        questionsWinterGames[3][5] = "Q4w-a5: ";
 
-        questionsWinterGames[0][0] = "Q5w: ";
-        questionsWinterGames[0][1] = "Q5w-a1: ";
-        questionsWinterGames[0][2] = "Q5w-a2: ";
-        questionsWinterGames[0][3] = "Q5w-a3: ";
-        questionsWinterGames[0][4] = "Q5w-a4: ";
-        questionsWinterGames[0][5] = "Q5w-a5: ";
+        questionsWinterGames[4][0] = "Q5w: ";
+        questionsWinterGames[4][1] = "Q5w-a1: ";
+        questionsWinterGames[4][2] = "Q5w-a2: ";
+        questionsWinterGames[4][3] = "Q5w-a3: ";
+        questionsWinterGames[4][4] = "Q5w-a4: ";
+        questionsWinterGames[4][5] = "Q5w-a5: ";
 
     }
 
