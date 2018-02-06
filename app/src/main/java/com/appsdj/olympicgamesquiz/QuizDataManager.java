@@ -10,6 +10,7 @@ import android.util.Log;
  */
 public class QuizDataManager extends Application {
     public int quizScore;
+    public String playerName;
     public SharedPreferences sp;
 
     public String[][] questionsSummerGames = new String[5][6];
@@ -22,6 +23,7 @@ public class QuizDataManager extends Application {
         sp = getSharedPreferences(getResources().getString(R.string.app_name),
                 MODE_PRIVATE);
         quizScore = sp.getInt("score",0);
+        playerName = sp.getString("player", "");
 
         // assign questions on Summer Olympics to array elements
         questionsSummerGames[0][0] = "Q1s: ";
@@ -97,6 +99,10 @@ public class QuizDataManager extends Application {
 
     }
 
+    public void savePlayerName(String playerName) {
+        sp.edit().putString("player", "Titus").commit();
+        Log.v("player name", "Player " + playerName);
+    }
     /**
      * method increments score when a question is answered correctly
      */
