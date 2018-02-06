@@ -10,4 +10,343 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="olympic_circles">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="olympic_games">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">40dp</item>
+    </style>
+
+    <style name="trivia_quiz">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="player_name_edit_text">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:background">@drawable/editable_text_rounded_corners</item>
+        <item name="android:inputType">text</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="start_buttons_area">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="summer_olympics_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="winter_olympics_btn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="main_body_area">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="header_summer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#0885c2</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="header_Winter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#0885c2</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="question_area_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="question_area">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="question_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">57dp</item>
+        <item name="android:layout_marginStart">57dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="question_value">
+        <item name="android:layout_width">255dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/question_label</item>
+        <item name="android:layout_marginLeft">57dp</item>
+        <item name="android:layout_marginStart">57dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="answer_rel_layout_area">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="answer_area_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="radio_group">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="answer_1_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+    </style>
+
+    <style name="answer_2_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="answer_3_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="answer_4_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">23dp</item>
+    </style>
+
+    <style name="answer_5_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">27dp</item>
+    </style>
+
+    <style name="ask_next_question_btn_on_radio">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="answer_1_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">-285dp</item>
+    </style>
+
+    <style name="answer_2_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="answer_3_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">28dp</item>
+    </style>
+
+    <style name="answer_4_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">23dp</item>
+    </style>
+
+    <style name="answer_5_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:layout_marginTop">27dp</item>
+    </style>
+
+    <style name="ask_next_question_btn_on_check">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="olympic_circles_on_results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="summer_olympics_on_results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#0885c2</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="quiz_results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textColor">#0885c2</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="quiz_results_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="your_score_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">38dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="your_score_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/your_score_label</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="correct_answers_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/your_score_value</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="correct_answers_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/correct_answers_label</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="incorrect_answers_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/correct_answers_value</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="incorrect_answers_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/incorrect_answers_label</item>
+        <item name="android:layout_marginStart">55dp</item>
+        <item name="android:layout_marginLeft">55dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="restart_quiz">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+    <style name="winter_olympics_on_results">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">#0885c2</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
 </resources>

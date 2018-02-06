@@ -11,71 +11,41 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        <LinearLayout style="@style/main_body_area">
 
             <ImageView
                 android:id="@+id/olympic_circles"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/olympic_circles" />
+                android:src="@drawable/olympic_circles"
+                style="@style/olympic_circles" />
 
             <ImageView
                 android:id="@+id/olympic_games"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="40dp"
-                android:src="@drawable/olympic_games" />
+                android:src="@drawable/olympic_games"
+                style="@style/olympic_games" />
 
             <ImageView
                 android:id="@+id/trivia_quiz"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="28dp"
-                android:src="@drawable/trivia_quiz" />
+                android:src="@drawable/trivia_quiz"
+                style="@style/trivia_quiz" />
 
             <EditText
                 android:id="@+id/player_name_edit_text"
-                android:layout_width="220dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/editable_text_rounded_corners"
-                android:hint=" Please enter your name "
-                android:inputType="text"
-                android:paddingBottom="5dp"
-                android:paddingLeft="12dp"
-                android:paddingTop="5dp" />
+                android:hint="@string/please_enter_your_name"
+                style="@style/player_name_edit_text" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="horizontal">
+        <LinearLayout style="@style/start_buttons_area">
 
             <ImageButton
                 android:id="@+id/summer_olympics_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:src="@drawable/summer_btn" />
+                android:src="@drawable/summer_btn"
+                style="@style/summer_olympics_btn" />
 
             <ImageButton
                 android:id="@+id/winter_olympics_btn"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#00000000"
-                android:src="@drawable/winter_btn" />
+                android:src="@drawable/winter_btn"
+                style="@style/winter_olympics_btn" />
 
         </LinearLayout>
 

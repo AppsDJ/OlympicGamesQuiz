@@ -12,112 +12,65 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="Summer Olympics"
-            android:textColor="#0885c2"
-            android:textSize="24sp" />
+            android:id="@+id/header_summer"
+            android:text="@string/summer_olympics"
+            style="@style/header_summer" />
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp">
+            android:id="@+id/question_area_layout"
+            style="@style/question_area_layout">
 
             <ImageView
                 android:id="@+id/question_area"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:src="@drawable/question_area" />
+                android:src="@drawable/question_area"
+                style="@style/question_area" />
 
             <TextView
                 android:id="@+id/question_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="57dp"
-                android:layout_marginStart="57dp"
-                android:paddingTop="10dp"
-                android:text="Question"
-                android:textStyle="bold"
-                android:textSize="17sp"/>
+                android:text="@string/question_label"
+                style="@style/question_label" />
 
             <TextView
                 android:id="@+id/question_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="57dp"
-                android:layout_marginStart="57dp"
-                android:paddingTop="6dp"
-                android:text="Question..."
-                android:layout_below="@id/question_label"
-                android:textStyle="bold"
-                android:textSize="15sp"/>
+                android:text="@string/question_value"
+                style="@style/question_value" />
 
         </RelativeLayout>
 
         <ImageView
             android:id="@+id/answer_area"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/answers_area" />
+            android:src="@drawable/answers_area"
+            style="@style/answer_area_img" />
 
         <CheckBox
             android:id="@+id/answer_1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="-285dp"
-            android:text="answer 1.1" />
+            android:text="@string/answer_1_check"
+            style="@style/answer_1_check" />
 
         <CheckBox
             android:id="@+id/answer_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="30dp"
-            android:text="answer 1.2" />
+            android:text="@string/answer_2_check"
+            style="@style/answer_2_check" />
 
         <CheckBox
             android:id="@+id/answer_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="28dp"
-            android:text="answer 1.3" />
+            android:text="@string/answer_3_check"
+            style="@style/answer_3_check" />
 
         <CheckBox
             android:id="@+id/answer_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="23dp"
-            android:text="answer 1.4" />
+            android:text="@string/answer_4_check"
+            style="@style/answer_4_check" />
 
         <CheckBox
             android:id="@+id/answer_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="27dp"
-            android:text="answer 1.5" />
+            android:text="@string/answer_5_check"
+            style="@style/answer_5_check" />
 
         <ImageButton
             android:id="@+id/ask_next_question_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:background="#00000000"
-            android:src="@drawable/next_btn" />
+            android:src="@drawable/next_btn"
+            style="@style/ask_next_question_btn_on_check" />
 
     </LinearLayout>
 

@@ -10,25 +10,38 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SummerOlympicsQ1" />
-        <activity android:name=".WinterOlympicsQ1" />
-        <activity android:name=".SummerOlympicsQ2" />
-        <activity android:name=".SummerOlympicsQuizResults" />
-        <activity android:name=".SummerOlympicsQ3" />
-        <activity android:name=".SummerOlympicsQ5" />
-        <activity android:name=".SummerOlympicsQ4" />
-        <activity android:name=".WinterOlympicsQ2" />
-        <activity android:name=".WinterOlympicsQ3" />
-        <activity android:name=".WinterOlympicsQ4" />
-        <activity android:name=".WinterOlympicsQ5" />
-        <activity android:name=".WinterOlympicsQuizResults"></activity>
+        <activity android:name=".SummerOlympicsQ1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQ1"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SummerOlympicsQ2"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SummerOlympicsQuizResults"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SummerOlympicsQ3"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SummerOlympicsQ5"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SummerOlympicsQ4"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQ2"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQ3"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQ4"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQ5"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WinterOlympicsQuizResults"
+            android:screenOrientation="portrait" ></activity>
     </application>
 
 </manifest>

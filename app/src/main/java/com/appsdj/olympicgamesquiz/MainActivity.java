@@ -16,9 +16,9 @@ import android.widget.Toast;
  */
 public class MainActivity extends AppCompatActivity {
 
-    QuizDataManager quizDataManager;
-    EditText editText;
-    String playerName;
+    public QuizDataManager quizDataManager;
+    public EditText editText;
+    public String playerName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

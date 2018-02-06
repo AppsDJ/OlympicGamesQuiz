@@ -24,6 +24,7 @@ public class WinterOlympicsQ2 extends AppCompatActivity {
     private boolean answerOneIsChecked;
     private boolean answerThreeIsChecked;
     private QuizDataManager quizDataManager;
+    private final int CURRENT_QUESTION_NUMBER = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,8 +104,10 @@ public class WinterOlympicsQ2 extends AppCompatActivity {
     public void updateScore() {
         if (answerOneIsChecked && answerThreeIsChecked) {
             quizDataManager.incrementScore();
+            quizDataManager.recordCorrectAnswers(CURRENT_QUESTION_NUMBER);
+        } else {
+            quizDataManager.recordIncorrectAnswers(CURRENT_QUESTION_NUMBER);
         }
-        Log.v("SCORE AFTER 2", "Sore in Q2 is: " + quizDataManager.quizScore);
     }
 
     /**
@@ -128,6 +131,16 @@ public class WinterOlympicsQ2 extends AppCompatActivity {
     public void moveToNextQuestion(View v) {
         Intent intent = new Intent(this, WinterOlympicsQ3.class);
         startActivity(intent);
+    }
+
+    /*
+    prevent return to the previous page as that would erroneously increase
+    score if correct answer were selected on previous page
+    */
+    @Override
+    public void onBackPressed() {
+        // do nothing!
+        return;
     }
 }
 

@@ -17,6 +17,7 @@ public class WinterOlympicsQ3 extends AppCompatActivity {
 
     private QuizDataManager quizDataManager;
     private boolean gotRightAnswer;
+    private final int CURRENT_QUESTION_NUMBER = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,9 @@ public class WinterOlympicsQ3 extends AppCompatActivity {
     public void updateScore() {
         if (gotRightAnswer) {
             quizDataManager.incrementScore();
+            quizDataManager.recordCorrectAnswers(CURRENT_QUESTION_NUMBER);
+        } else {
+            quizDataManager.recordIncorrectAnswers(CURRENT_QUESTION_NUMBER);
         }
     }
 
@@ -108,5 +112,15 @@ public class WinterOlympicsQ3 extends AppCompatActivity {
     public void moveToNextQuestion(View v) {
         Intent intent = new Intent(this, WinterOlympicsQ4.class);
         startActivity(intent);
+    }
+
+    /*
+    prevent return to the previous page as that would erroneously increase
+    score if correct answer were selected on previous page
+    */
+    @Override
+    public void onBackPressed() {
+        // do nothing!
+        return;
     }
 }

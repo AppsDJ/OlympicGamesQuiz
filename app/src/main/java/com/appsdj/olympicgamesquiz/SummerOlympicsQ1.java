@@ -113,4 +113,14 @@ public class SummerOlympicsQ1 extends AppCompatActivity {
         Intent intent = new Intent(this, SummerOlympicsQ2.class);
         startActivity(intent);
     }
+
+    /*
+    prevent return to the previous page as that would erroneously increase
+    score if correct answer were selected on previous page
+    */
+    @Override
+    public void onBackPressed() {
+        // do nothing!
+        return;
+    }
 }

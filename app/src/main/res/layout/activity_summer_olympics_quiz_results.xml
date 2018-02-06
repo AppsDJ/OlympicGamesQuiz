@@ -13,123 +13,63 @@
 
         <ImageView
             android:id="@+id/olympic_circles"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/olympic_circles" />
+            android:src="@drawable/olympic_circles"
+            style="@style/olympic_circles_on_results" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="Summer Olympics"
-            android:textColor="#0885c2"
-            android:textSize="34sp" />
+            android:id="@+id/summer_olympics_on_results"
+            android:text="@string/summer_olympics_on_results"
+            style="@style/summer_olympics_on_results" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="6dp"
-            android:text="Quiz Results"
-            android:textColor="#0885c2"
-            android:textSize="24sp" />
+            android:id="@+id/quiz_results"
+            android:text="@string/quiz_results"
+            style="@style/quiz_results" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:src="@drawable/quiz_results" />
+                android:src="@drawable/quiz_results"
+                style="@style/quiz_results_img" />
 
             <TextView
                 android:id="@+id/your_score_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="38dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:text="Your quiz score is: "/>
+                android:text="@string/your_quiz_score_is"
+                style="@style/your_score_label" />
 
             <TextView
                 android:id="@+id/your_score_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/your_score_label"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="6dp"
-                android:textSize="20sp"
-                android:text="5 out of 5"/>
+                android:text="@string/your_score_value"
+                style="@style/your_score_value" />
 
             <TextView
                 android:id="@+id/correct_answers_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/your_score_value"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="12dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Questions answered correctly: "/>
+                android:text="@string/correct_answers_label"
+                style="@style/correct_answers_label" />
 
             <TextView
                 android:id="@+id/correct_answers_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/correct_answers_label"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="6dp"
-                android:textSize="18sp"
-                android:text="All"/>
+                android:text="@string/correct_answers_value"
+                style="@style/correct_answers_value" />
 
             <TextView
                 android:id="@+id/incorrect_answers_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/correct_answers_value"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="12dp"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:text="Questions answered incorrectly: "/>
+                android:text="@string/incorrect_answers_label"
+                style="@style/incorrect_answers_label" />
 
             <TextView
                 android:id="@+id/incorrect_answers_value"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/incorrect_answers_label"
-                android:layout_marginStart="55dp"
-                android:layout_marginLeft="55dp"
-                android:layout_marginTop="6dp"
-                android:textSize="18sp"
-                android:text="None"/>
+                android:text="@string/incorrect_answers_value"
+                style="@style/incorrect_answers_value" />
 
         </RelativeLayout>
 
-
-
         <ImageButton
             android:id="@+id/restart_quiz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:background="#00000000"
-            android:src="@drawable/next_btn" />
-
-        <!--REMEMBER TO CHANGE BUTTON-->
-
+            android:src="@drawable/restart_quiz"
+            style="@style/restart_quiz" />
 
     </LinearLayout>
 

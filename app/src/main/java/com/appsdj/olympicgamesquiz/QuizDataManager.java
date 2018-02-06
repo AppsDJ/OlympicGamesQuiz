@@ -38,76 +38,76 @@ public class QuizDataManager extends Application {
         sp.edit().putStringSet("incorrect_answers_set", incorrectAnswers);
 
         // assign questions on Summer Olympics to array elements
-        questionsSummerGames[0][0] = "Q1s: ";
-        questionsSummerGames[0][1] = "Q1s-a1: ";
-        questionsSummerGames[0][2] = "Q1s-a2: ";
-        questionsSummerGames[0][3] = "Q1s-a3: ";
-        questionsSummerGames[0][4] = "Q1-a4: ";
-        questionsSummerGames[0][5] = "Q1-a5: ";
+        questionsSummerGames[0][0] = "What year were the first modern Summer Olympic Games held?";
+        questionsSummerGames[0][1] = "1900";
+        questionsSummerGames[0][2] = "1894";
+        questionsSummerGames[0][3] = "1896";
+        questionsSummerGames[0][4] = "1904";
+        questionsSummerGames[0][5] = "1910";
 
-        questionsSummerGames[1][0] = "Q2s: ";
-        questionsSummerGames[1][1] = "Q2s-a1: ";
-        questionsSummerGames[1][2] = "Q2s-a2: ";
-        questionsSummerGames[1][3] = "Q2s-a3: ";
-        questionsSummerGames[1][4] = "Q2s-a4: ";
-        questionsSummerGames[1][5] = "Q2s-a5: ";
+        questionsSummerGames[1][0] = "Which two countries hosted the summer Olympics twice in total?";
+        questionsSummerGames[1][1] = "Greece";
+        questionsSummerGames[1][2] = "United States";
+        questionsSummerGames[1][3] = "France";
+        questionsSummerGames[1][4] = "United Kingdom";
+        questionsSummerGames[1][5] = "China";
 
-        questionsSummerGames[2][0] = "Q4s: ";
-        questionsSummerGames[2][1] = "Q4s-a1: ";
-        questionsSummerGames[2][2] = "Q4s-a2: ";
-        questionsSummerGames[2][3] = "Q4s-a3: ";
-        questionsSummerGames[2][4] = "Q4s-a4: ";
-        questionsSummerGames[2][5] = "Q4s-a5: ";
+        questionsSummerGames[2][0] = "Where were the first ever Olympic Games hosted?";
+        questionsSummerGames[2][1] = "Rio De Janiero, Brazil";
+        questionsSummerGames[2][2] = "Rome, Italy";
+        questionsSummerGames[2][3] = "Cluj Napoca, Romania";
+        questionsSummerGames[2][4] = "Athens, Greece";
+        questionsSummerGames[2][5] = "Liverpool, United Kingdom";
 
-        questionsSummerGames[3][0] = "Q4s: ";
-        questionsSummerGames[3][1] = "Q4s-a1: ";
-        questionsSummerGames[3][2] = "Q4s-a2: ";
-        questionsSummerGames[3][3] = "Q4s-a3: ";
-        questionsSummerGames[3][4] = "Q4s-a4: ";
-        questionsSummerGames[3][5] = "Q4s-a5: ";
+        questionsSummerGames[3][0] = "What is the largest city to have ever hosted the Summer Olympics?";
+        questionsSummerGames[3][1] = "Paris, France";
+        questionsSummerGames[3][2] = "Tokyo, Japan";
+        questionsSummerGames[3][3] = "London, United Kingdom";
+        questionsSummerGames[3][4] = "Seoul, South Korea";
+        questionsSummerGames[3][5] = "Los Angeles, United States";
 
-        questionsSummerGames[4][0] = "Q5s: ";
-        questionsSummerGames[4][1] = "Q5s-a1: ";
-        questionsSummerGames[4][2] = "Q5s-a2: ";
-        questionsSummerGames[4][3] = "Q5s-a3: ";
-        questionsSummerGames[4][4] = "Q5s-a4: ";
-        questionsSummerGames[4][5] = "Q5s-a5: ";
+        questionsSummerGames[4][0] = "Which two of the following sports have always been a part of the summer Olympics?";
+        questionsSummerGames[4][1] = "Swimming";
+        questionsSummerGames[4][2] = "Shooting";
+        questionsSummerGames[4][3] = "Fencing";
+        questionsSummerGames[4][4] = "Wrestling";
+        questionsSummerGames[4][5] = "Diving";
 
         // assign questions on Winter Olympics to array elements
-        questionsWinterGames[0][0] = "Q1w: ";
-        questionsWinterGames[0][1] = "Q1w-a1: ";
-        questionsWinterGames[0][2] = "Q1w-a2: ";
-        questionsWinterGames[0][3] = "Q1w-a3: ";
-        questionsWinterGames[0][4] = "Q1w-a4: ";
-        questionsWinterGames[0][5] = "Q1w-a5: ";
+        questionsWinterGames[0][0] = "Select the year in which the first Winter Olympic games were held?";
+        questionsWinterGames[0][1] = "1902";
+        questionsWinterGames[0][2] = "1918";
+        questionsWinterGames[0][3] = "1924";
+        questionsWinterGames[0][4] = "1920";
+        questionsWinterGames[0][5] = "1908";
 
-        questionsWinterGames[1][0] = "Q2w: ";
-        questionsWinterGames[1][1] = "Q2w-a1: ";
-        questionsWinterGames[1][2] = "Q2w-a2: ";
-        questionsWinterGames[1][3] = "Q2w-a3: ";
-        questionsWinterGames[1][4] = "Q2w-a4: ";
-        questionsWinterGames[1][5] = "Q2w-a5: ";
+        questionsWinterGames[1][0] = "Which two years did Canada host the Winter Olympics?";
+        questionsWinterGames[1][1] = "1988";
+        questionsWinterGames[1][2] = "1968";
+        questionsWinterGames[1][3] = "2010";
+        questionsWinterGames[1][4] = "1942";
+        questionsWinterGames[1][5] = "2006";
 
-        questionsWinterGames[2][0] = "Q4w: ";
-        questionsWinterGames[2][1] = "Q4w-a1: ";
-        questionsWinterGames[2][2] = "Q4w-a2: ";
-        questionsWinterGames[2][3] = "Q4w-a3: ";
-        questionsWinterGames[2][4] = "Q4w-a4: ";
-        questionsWinterGames[2][5] = "Q4w-a5: ";
+        questionsWinterGames[2][0] = "Where were the first modern Olympic Winter Games held?";
+        questionsWinterGames[2][1] = "Stockholm, Sweden";
+        questionsWinterGames[2][2] = "Moscow, Russia";
+        questionsWinterGames[2][3] = "Salt Lake City, UT";
+        questionsWinterGames[2][4] = "Chamonix, France";
+        questionsWinterGames[2][5] = "Vancouver, Canada";
 
-        questionsWinterGames[3][0] = "Q4w: ";
-        questionsWinterGames[3][1] = "Q4w-a1: ";
-        questionsWinterGames[3][2] = "Q4w-a2: ";
-        questionsWinterGames[3][3] = "Q4w-a3: ";
-        questionsWinterGames[3][4] = "Q4w-a4: ";
-        questionsWinterGames[3][5] = "Q4w-a5: ";
+        questionsWinterGames[3][0] = "How far did Eddie 'The Eagle' Edwards jump in the large hill competition?";
+        questionsWinterGames[3][1] = "91m";
+        questionsWinterGames[3][2] = "71m";
+        questionsWinterGames[3][3] = "84m";
+        questionsWinterGames[3][4] = "62m";
+        questionsWinterGames[3][5] = "53m";
 
-        questionsWinterGames[4][0] = "Q5w: ";
-        questionsWinterGames[4][1] = "Q5w-a1: ";
-        questionsWinterGames[4][2] = "Q5w-a2: ";
-        questionsWinterGames[4][3] = "Q5w-a3: ";
-        questionsWinterGames[4][4] = "Q5w-a4: ";
-        questionsWinterGames[4][5] = "Q5w-a5: ";
+        questionsWinterGames[4][0] = "Which two countries are in the top 3 for total medal wins?";
+        questionsWinterGames[4][1] = "Norway";
+        questionsWinterGames[4][2] = "Canada";
+        questionsWinterGames[4][3] = "United States";
+        questionsWinterGames[4][4] = "Germany";
+        questionsWinterGames[4][5] = "Soviet Union";
 
     }
 
@@ -125,17 +125,22 @@ public class QuizDataManager extends Application {
         Log.v("UPDATED SCORE", "Score is: " + quizScore);
     }
 
+    /**
+     * method saves the correct answer details when a question is answered correctly
+     */
     public void recordCorrectAnswers(int questionNumber) {
         sp.edit().putInt("number_of_correct_answers", quizScore).commit();
         correctAnswers.add(Integer.toString(questionNumber));
         sp.edit().putStringSet("correct_answers_set", correctAnswers);
     }
 
+    /**
+     * method saves the incorrect answer details when a question is answered correctly
+     */
     public void recordIncorrectAnswers(int questionNumber) {
         incorrectAnswers.add(Integer.toString(questionNumber));
-        sp.edit().putStringSet("correct_answers_set", incorrectAnswers);
+        sp.edit().putStringSet("incorrect_answers_set", incorrectAnswers);
     }
-
 
     /**
      * method clears score when quiz is restarted from results activity
@@ -144,6 +149,27 @@ public class QuizDataManager extends Application {
         quizScore = 0;
     }
 
+    /**
+     * method clears player name when quiz is restarted from results activity
+     */
     public void clearPlayerName() { playerName = "";}
+
+    /**
+     * method clears all correct anwswers stored in Set when quiz is restarted from results activity
+     */
+    public void clearCorrectAnswersList () {
+        correctAnswers = null;
+        correctAnswers = new HashSet<String>();
+        sp.edit().putStringSet("correct_answers_set", correctAnswers);
+    }
+
+    /**
+     * method clears all incorrect anwswers stored in Set when quiz is restarted from results activity
+     */
+    public void clearIncorrectAnswersList () {
+        incorrectAnswers = null;
+        incorrectAnswers = new HashSet<String>();
+        sp.edit().putStringSet("incorrect_answers_set", incorrectAnswers);
+    }
 
 }
