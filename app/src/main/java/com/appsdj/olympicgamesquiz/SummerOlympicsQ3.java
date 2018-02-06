@@ -17,6 +17,7 @@ public class SummerOlympicsQ3 extends AppCompatActivity {
 
     private QuizDataManager quizDataManager;
     private boolean gotRightAnswer;
+    private final int CURRENT_QUESTION_NUMBER = 3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +86,9 @@ public class SummerOlympicsQ3 extends AppCompatActivity {
     public void updateScore() {
         if (gotRightAnswer) {
             quizDataManager.incrementScore();
+            quizDataManager.recordCorrectAnswers(CURRENT_QUESTION_NUMBER);
+        } else {
+            quizDataManager.recordIncorrectAnswers(CURRENT_QUESTION_NUMBER);
         }
     }
 

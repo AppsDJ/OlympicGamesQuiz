@@ -4,6 +4,10 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Class manages all data for the app: questions, answers and score
  * It uses SharedPreferences to save and share the data between various activities
@@ -11,6 +15,8 @@ import android.util.Log;
 public class QuizDataManager extends Application {
     public int quizScore;
     public String playerName;
+    public Set<String> correctAnswers;
+    public Set<String> incorrectAnswers;
     public SharedPreferences sp;
 
     public String[][] questionsSummerGames = new String[5][6];
@@ -24,6 +30,12 @@ public class QuizDataManager extends Application {
                 MODE_PRIVATE);
         quizScore = sp.getInt("score",0);
         playerName = sp.getString("player", "");
+
+        correctAnswers = new HashSet<String>();
+        sp.edit().putStringSet("correct_answers_set", correctAnswers);
+
+        incorrectAnswers = new HashSet<String>();
+        sp.edit().putStringSet("incorrect_answers_set", incorrectAnswers);
 
         // assign questions on Summer Olympics to array elements
         questionsSummerGames[0][0] = "Q1s: ";
@@ -100,18 +112,30 @@ public class QuizDataManager extends Application {
     }
 
     public void savePlayerName(String playerName) {
-        sp.edit().putString("player", "Titus").commit();
+        this.playerName = playerName;
+        sp.edit().putString("player", this.playerName).commit();
         Log.v("player name", "Player " + playerName);
     }
     /**
      * method increments score when a question is answered correctly
      */
-    public void incrementScore()
-    {
+    public void incrementScore() {
         quizScore++;
         sp.edit().putInt("score", quizScore).commit();
         Log.v("UPDATED SCORE", "Score is: " + quizScore);
     }
+
+    public void recordCorrectAnswers(int questionNumber) {
+        sp.edit().putInt("number_of_correct_answers", quizScore).commit();
+        correctAnswers.add(Integer.toString(questionNumber));
+        sp.edit().putStringSet("correct_answers_set", correctAnswers);
+    }
+
+    public void recordIncorrectAnswers(int questionNumber) {
+        incorrectAnswers.add(Integer.toString(questionNumber));
+        sp.edit().putStringSet("correct_answers_set", incorrectAnswers);
+    }
+
 
     /**
      * method clears score when quiz is restarted from results activity
@@ -119,4 +143,7 @@ public class QuizDataManager extends Application {
     public void clearScore() {
         quizScore = 0;
     }
+
+    public void clearPlayerName() { playerName = "";}
+
 }

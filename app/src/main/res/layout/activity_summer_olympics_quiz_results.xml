@@ -77,7 +77,7 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginTop="12dp"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:text="Questions answered correctly: "/>
 
@@ -89,30 +89,30 @@
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginTop="6dp"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:text="All"/>
 
             <TextView
-                android:id="@+id/wrong_answers_label"
+                android:id="@+id/incorrect_answers_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/correct_answers_value"
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginTop="12dp"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:text="Questions answered correctly: "/>
+                android:text="Questions answered incorrectly: "/>
 
             <TextView
-                android:id="@+id/wrong_answers_value"
+                android:id="@+id/incorrect_answers_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/wrong_answers_label"
+                android:layout_below="@id/incorrect_answers_label"
                 android:layout_marginStart="55dp"
                 android:layout_marginLeft="55dp"
                 android:layout_marginTop="6dp"
-                android:textSize="19sp"
+                android:textSize="18sp"
                 android:text="None"/>
 
         </RelativeLayout>
