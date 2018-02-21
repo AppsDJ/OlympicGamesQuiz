@@ -2,7 +2,7 @@
 
 ### Highlights
 
-* App uses a separate activity for each question
+* A multi-screen application using a separate activity for each question
 * Start page validates for input and prevents progress unless name is provided
 * A Quiz Data Management class centralizes and handles all data for the quiz
 * Data is shared between activities using SharedPreferences
