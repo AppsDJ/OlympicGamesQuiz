@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_start_page_bg"
+    tools:context=".WinterOlympicsQuizResults">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/olympic_circles"
+                style="@style/olympic_circles_on_results"
+                android:src="@drawable/olympic_circles" />
+
+            <TextView
+                android:id="@+id/summer_olympics_on_results"
+                style="@style/winter_olympics_on_results"
+                android:text="@string/winter_olympics_on_results" />
+
+            <TextView
+                android:id="@+id/quiz_results"
+                style="@style/quiz_results"
+                android:text="@string/quiz_results" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    style="@style/quiz_results_img"
+                    android:src="@drawable/quiz_results" />
+
+                <TextView
+                    android:id="@+id/your_score_label"
+                    style="@style/your_score_label_land"
+                    android:text="@string/your_quiz_score_is" />
+
+                <TextView
+                    android:id="@+id/your_score_value"
+                    style="@style/your_score_value_land"
+                    android:text="@string/your_score_value" />
+
+                <TextView
+                    android:id="@+id/correct_answers_label"
+                    style="@style/correct_answers_label_land"
+                    android:text="@string/correct_answers_label" />
+
+                <TextView
+                    android:id="@+id/correct_answers_value"
+                    style="@style/correct_answers_value_land"
+                    android:text="@string/correct_answers_value" />
+
+                <TextView
+                    android:id="@+id/incorrect_answers_label"
+                    style="@style/incorrect_answers_label_land"
+                    android:text="@string/incorrect_answers_label" />
+
+                <TextView
+                    android:id="@+id/incorrect_answers_value"
+                    style="@style/incorrect_answers_value_land"
+                    android:text="@string/incorrect_answers_value" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/restart_quiz"
+                style="@style/restart_quiz"
+                android:src="@drawable/restart_quiz" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

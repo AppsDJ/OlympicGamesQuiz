@@ -21,7 +21,7 @@
     <string name="answer_4_check">answer 4</string>
     <string name="answer_5_check">answer 5</string>
     <string name="summer_olympics_on_results">Summer Olympics</string>
-    <string name="quiz_results">Quiz Results</string>
+    <string name="quiz_results">Quiz Results Summary</string>
     <string name="your_quiz_score_is">Your quiz score is:</string>
     <string name="your_score_value">5 out of 5</string>
     <string name="correct_answers_label">Questions answered correctly:</string>

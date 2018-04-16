@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_start_page_bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/left_area"
+        style="@style/main_body_area">
+
+        <ImageView
+            android:id="@+id/olympic_circles"
+            style="@style/olympic_circles_land"
+            android:src="@drawable/olympic_circles_land" />
+
+        <ImageView
+            android:id="@+id/olympic_games"
+            style="@style/olympic_games_land"
+            android:src="@drawable/olympic_games_land" />
+
+        <ImageView
+            android:id="@+id/trivia_quiz"
+            style="@style/trivia_quiz_land"
+            android:src="@drawable/trivia_quiz" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/right_area"
+        style="@style/start_buttons_area"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignRight="@id/left_area"
+        android:layout_marginEnd="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/player_name_edit_text"
+            style="@style/player_name_edit_text"
+            android:hint="@string/please_enter_your_name" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <ImageButton
+                android:id="@+id/summer_olympics_btn"
+                style="@style/summer_olympics_btn"
+                android:src="@drawable/summer_btn" />
+
+            <ImageButton
+                android:id="@+id/winter_olympics_btn"
+                style="@style/winter_olympics_btn"
+                android:src="@drawable/winter_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

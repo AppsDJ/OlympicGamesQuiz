@@ -13,7 +13,7 @@
 
         <TextView
             android:id="@+id/header_winter"
-            android:text="@string/winter_olympics"
+            android:text="@string/summer_olympics"
             style="@style/header_Winter" />
 
         <RelativeLayout

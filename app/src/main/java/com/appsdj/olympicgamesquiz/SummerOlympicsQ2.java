@@ -3,7 +3,6 @@ package com.appsdj.olympicgamesquiz;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
@@ -22,7 +21,10 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
     private CheckBox answerFourValue;
     private CheckBox answerFiveValue;
     private boolean answerOneIsChecked;
+    private boolean answerTwoIsChecked;
     private boolean answerThreeIsChecked;
+    private boolean answerFourIsChecked;
+    private boolean answerFiveIsChecked;
     private QuizDataManager quizDataManager;
     private final int CURRENT_QUESTION_NUMBER = 2;
 
@@ -33,7 +35,7 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
         quizDataManager = (QuizDataManager) getApplication();
 
         setUpInitialUI();
-        setCorrectAnswers();
+        checkForSelectedAnswers();
         setUpMoveToNextQuestion();
     }
 
@@ -72,9 +74,9 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
     }
 
     /**
-     * set answers 1 and 3 as the correct collective answer: expect them to be checked
+     * check if any of the answers were selected (i.e. checkboxes ticked)
      */
-    public void setCorrectAnswers() {
+    public void checkForSelectedAnswers() {
         // check answer 1 on list
         answerOneValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -82,6 +84,16 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
                                          boolean isChecked) {
                 if (isChecked){
                     answerOneIsChecked = true;
+                }
+            }
+        });
+        // check answer 2 on list
+        answerTwoValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerTwoIsChecked = true;
                 }
             }
         });
@@ -95,19 +107,41 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
                 }
             }
         });
+        // check answer 4 on list
+        answerFourValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerFourIsChecked = true;
+                }
+            }
+        });
+        // check answer 5 on list
+        answerFiveValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerFiveIsChecked = true;
+                }
+            }
+        });
     }
 
     /**
      * check for correct answers; if 1 and 3 were selected increment score
      */
     public void updateScore() {
-        if (answerOneIsChecked && answerThreeIsChecked) {
+        if (answerOneIsChecked && answerThreeIsChecked && !answerTwoIsChecked
+                && !answerFourIsChecked && !answerFiveIsChecked) {
             quizDataManager.incrementScore();
             quizDataManager.recordCorrectAnswers(CURRENT_QUESTION_NUMBER);
         } else {
             quizDataManager.recordIncorrectAnswers(CURRENT_QUESTION_NUMBER);
         }
     }
+
 
     /**
      * set up button to move to the next question
@@ -118,7 +152,6 @@ public class SummerOlympicsQ2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 updateScore();
-                Log.v("ARE CHECKED", "are checked-: " + answerOneIsChecked + " " + answerThreeIsChecked);
                 moveToNextQuestion(v);
             }
         });

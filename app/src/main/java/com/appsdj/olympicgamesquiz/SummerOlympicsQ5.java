@@ -1,5 +1,6 @@
 package com.appsdj.olympicgamesquiz;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Class defines the fifth question on Summer Olympics with the possible answers
@@ -22,7 +24,10 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
     private CheckBox answerFourValue;
     private CheckBox answerFiveValue;
     private boolean answerOneIsChecked;
+    private boolean answerTwoIsChecked;
     private boolean answerThreeIsChecked;
+    private boolean answerFourIsChecked;
+    private boolean answerFiveIsChecked;
     private QuizDataManager quizDataManager;
     private final int CURRENT_QUESTION_NUMBER = 5;
 
@@ -35,7 +40,7 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
         quizDataManager = (QuizDataManager) getApplication();
 
         setUpInitialUI();
-        setCorrectAnswers();
+        checkForSelectedAnswers();
         setUpMoveToQuizResults();
     }
 
@@ -76,7 +81,7 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
     /**
      * set answers 1 and 3 as the correct collective answer: expect them to be checked
      */
-    public void setCorrectAnswers() {
+    public void checkForSelectedAnswers() {
         // check answer 1 on list
         answerOneValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -84,6 +89,16 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
                                          boolean isChecked) {
                 if (isChecked){
                     answerOneIsChecked = true;
+                }
+            }
+        });
+        // check answer 2 on list
+        answerTwoValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerTwoIsChecked = true;
                 }
             }
         });
@@ -97,13 +112,34 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
                 }
             }
         });
+        // check answer 4 on list
+        answerFourValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerFourIsChecked = true;
+                }
+            }
+        });
+        // check answer 5 on list
+        answerFiveValue.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView,
+                                         boolean isChecked) {
+                if (isChecked){
+                    answerFiveIsChecked = true;
+                }
+            }
+        });
     }
 
     /**
      * check for correct answers; if 1 and 3 were selected increment score
      */
     public void updateScore() {
-        if (answerOneIsChecked && answerThreeIsChecked) {
+        if (answerOneIsChecked && answerThreeIsChecked && !answerTwoIsChecked
+                && !answerFourIsChecked && !answerFiveIsChecked) {
             quizDataManager.incrementScore();
             quizDataManager.recordCorrectAnswers(CURRENT_QUESTION_NUMBER);
         } else {

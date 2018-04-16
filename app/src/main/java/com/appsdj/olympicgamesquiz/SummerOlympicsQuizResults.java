@@ -28,6 +28,11 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
     String correctAnswersString;
     String incorrectAnswersString;
 
+    String summaryOnToast;
+    String resultsOnToast;
+    String correctAnswersOnToast;
+    String incorrectAnswersOnToast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,30 +64,63 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
         playerFirstName = playerWholeName[0];
     }
 
+    public void displayResultsToast(String correctAnswersString, String incorrectAnswersString) {
+
+        Context context = getApplicationContext();
+
+        summaryOnToast = "<< QUIZ RESULTS >>";
+        resultsOnToast = "\n\n" + playerFirstName + ", your score is:\n" + quizDataManager.quizScore + " out of 5";
+        correctAnswersOnToast = "\n\n" + "Questions answered correctly:\n";
+        incorrectAnswersOnToast = "\n\n" + "Questions answered incorrectly:\n";
+        //retrieveCorrectAnswers();
+
+        if (correctAnswersString.isEmpty()) {
+            correctAnswersOnToast += "None. Oh dear! Try again";
+        } else {
+            correctAnswersOnToast += correctAnswersString;
+        }
+
+        //retrieveIncorrectAnswers();
+
+        if (incorrectAnswersString.isEmpty()) {
+            incorrectAnswersOnToast += "None. Well done!";
+        } else {
+            incorrectAnswersOnToast += incorrectAnswersString;
+        }
+
+        summaryOnToast += "\n" + resultsOnToast + correctAnswersOnToast + incorrectAnswersOnToast;
+
+        int duration = Toast.LENGTH_LONG;
+
+        Toast toast = Toast.makeText(context, summaryOnToast, duration);
+        toast.show();
+    }
+
     public void setUpInitialUI() {
 
+        retrieveCorrectAnswers();
+        retrieveIncorrectAnswers();
+
+        displayResultsToast(correctAnswersString, incorrectAnswersString);
+
         TextView scoreLabel = (TextView) findViewById(R.id.your_score_label);
-        scoreLabel.setText(playerFirstName + ", " + "your score is: ");
+        scoreLabel.setText("Overall score: ");
 
         TextView scoreValue = (TextView) findViewById(R.id.your_score_value);
         scoreValue.setText(quizDataManager.quizScore + " out of 5");
 
-        retrieveCorrectAnswers();
-
         // display the values
         TextView correctAnswersValue = (TextView) findViewById(R.id.correct_answers_value);
         if (correctAnswersString.isEmpty()) {
-            correctAnswersValue.setText("None. Oh dear! Try again");
+            correctAnswersValue.setText("None");
         } else {
             correctAnswersValue.setText(correctAnswersString);
         }
 
-        retrieveIncorrectAnswers();
-
         // display the values
         TextView incorrectAnswersValue = (TextView) findViewById(R.id.incorrect_answers_value);
         if (incorrectAnswersString.isEmpty()) {
-            incorrectAnswersValue.setText("None. Well done!");
+            incorrectAnswersValue.setText("None");
         } else {
             incorrectAnswersValue.setText(incorrectAnswersString);
         }
@@ -127,7 +165,7 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
 
         // say "Thank you"
         Context context = getApplicationContext();
-        CharSequence text = "Thank you for choosing to play again, " + playerFirstName + "!";
+        CharSequence text = "Thank you for choosing to play again!";
         int duration = Toast.LENGTH_LONG;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
