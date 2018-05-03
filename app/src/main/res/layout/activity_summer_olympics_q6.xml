@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_start_page_bg"
+    tools:context=".SummerOlympicsQ6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/header_summer"
+            android:text="@string/summer_olympics"
+            style="@style/header_summer" />
+
+        <RelativeLayout
+            android:id="@+id/question_area_layout"
+            style="@style/question_area_layout">
+
+            <ImageView
+                android:id="@+id/question_area"
+                android:src="@drawable/question_area"
+                style="@style/question_area" />
+
+            <TextView
+                android:id="@+id/question_label"
+                android:text="@string/question_label"
+                android:layout_centerHorizontal="true"
+                style="@style/question_label" />
+
+            <TextView
+                android:id="@+id/question_value"
+                android:text="@string/question_value"
+                android:layout_centerInParent="true"
+                style="@style/question_value" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/answer_rel_layout_area"
+            style="@style/answer_rel_layout_area">
+
+            <ImageView
+                android:id="@+id/answer_area"
+                android:src="@drawable/question_area"
+                style="@style/answer_area_img" />
+
+            <EditText
+                android:id="@+id/answer_edit_text"
+                style="@style/answer_edit_text"
+                android:layout_width="293dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/answer_area"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="19dp"
+                android:hint="@string/your_anwer_here" />
+
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/ask_next_question_btn"
+            android:src="@drawable/next_btn"
+            android:layout_marginTop="20dp"
+            style="@style/ask_next_question_btn_on_radio" />
+
+
+    </LinearLayout>
+
+</ScrollView>

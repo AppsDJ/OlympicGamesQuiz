@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,17 +18,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".SummerOlympicsQ1" />
-        <activity android:name=".SummerOlympicsQ2"/>
-        <activity android:name=".SummerOlympicsQ3"/>
-        <activity android:name=".SummerOlympicsQ4"/>
-        <activity android:name=".SummerOlympicsQ5"/>
-        <activity android:name=".SummerOlympicsQuizResults"/>
-        <activity android:name=".WinterOlympicsQ1"/>
-        <activity android:name=".WinterOlympicsQ2"/>
-        <activity android:name=".WinterOlympicsQ3"/>
-        <activity android:name=".WinterOlympicsQ4"/>
-        <activity android:name=".WinterOlympicsQ5"/>
-        <activity android:name=".WinterOlympicsQuizResults"/>
+        <activity android:name=".SummerOlympicsQ2" />
+        <activity android:name=".SummerOlympicsQ3" />
+        <activity android:name=".SummerOlympicsQ4" />
+        <activity android:name=".SummerOlympicsQ5" />
+        <activity android:name=".SummerOlympicsQuizResults" />
+        <activity android:name=".WinterOlympicsQ1" />
+        <activity android:name=".WinterOlympicsQ2" />
+        <activity android:name=".WinterOlympicsQ3" />
+        <activity android:name=".WinterOlympicsQ4" />
+        <activity android:name=".WinterOlympicsQ5" />
+        <activity android:name=".WinterOlympicsQuizResults" />
+        <activity
+            android:name=".SummerOlympicsQ6"
+            android:label="@string/title_activity_summer_olympics_q6"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

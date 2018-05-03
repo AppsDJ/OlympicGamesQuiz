@@ -156,16 +156,16 @@ public class SummerOlympicsQ5 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 updateScore();
-                showQuizResults(v);
+                moveToNextQuestion(v);
             }
         });
     }
 
     /**
-     * go to the quiz results
+     * go to the next question
      */
-    public void showQuizResults(View v) {
-        Intent intent = new Intent(this, SummerOlympicsQuizResults.class);
+    public void moveToNextQuestion(View v) {
+        Intent intent = new Intent(this, SummerOlympicsQ6.class);
         startActivity(intent);
     }
 

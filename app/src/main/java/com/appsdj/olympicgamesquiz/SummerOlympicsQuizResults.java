@@ -69,7 +69,7 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
         Context context = getApplicationContext();
 
         summaryOnToast = "<< QUIZ RESULTS >>";
-        resultsOnToast = "\n\n" + playerFirstName + ", your score is:\n" + quizDataManager.quizScore + " out of 5";
+        resultsOnToast = "\n\n" + playerFirstName + ", your score is:\n" + quizDataManager.quizScore + " out of 6";
         correctAnswersOnToast = "\n\n" + "Questions answered correctly:\n";
         incorrectAnswersOnToast = "\n\n" + "Questions answered incorrectly:\n";
         //retrieveCorrectAnswers();
@@ -79,8 +79,6 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
         } else {
             correctAnswersOnToast += correctAnswersString;
         }
-
-        //retrieveIncorrectAnswers();
 
         if (incorrectAnswersString.isEmpty()) {
             incorrectAnswersOnToast += "None. Well done!";
@@ -107,7 +105,7 @@ public class SummerOlympicsQuizResults extends AppCompatActivity {
         scoreLabel.setText("Overall score: ");
 
         TextView scoreValue = (TextView) findViewById(R.id.your_score_value);
-        scoreValue.setText(quizDataManager.quizScore + " out of 5");
+        scoreValue.setText(quizDataManager.quizScore + " out of 6");
 
         // display the values
         TextView correctAnswersValue = (TextView) findViewById(R.id.correct_answers_value);

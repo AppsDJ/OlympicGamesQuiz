@@ -5,7 +5,9 @@
     <string name="question3">Question 3:</string>
     <string name="question4">Question 4:</string>
     <string name="question5">Question 5:</string>
+    <string name="question6">Question 6:</string>
     <string name="please_enter_your_name">Please enter your name</string>
+    <string name="your_anwer_here">Your answer here</string>
     <string name="summer_olympics">Summer Olympics</string>
     <string name="winter_olympics">Winter Olympics</string>
     <string name="question_label">Question</string>
@@ -14,7 +16,7 @@
     <string name="answer_2_radio">answer 2</string>
     <string name="answer_3_radio">answer 3</string>
     <string name="answer_4_radio">answer 4</string>
-    <string name="answer_5_radio">answer 1.5</string>
+    <string name="answer_5_radio">answer 5</string>
     <string name="answer_1_check">answer 1</string>
     <string name="answer_2_check">answer 2</string>
     <string name="answer_3_check">answer 3</string>
@@ -29,4 +31,5 @@
     <string name="incorrect_answers_label">Questions answered incorrectly:</string>
     <string name="incorrect_answers_value">None</string>
     <string name="winter_olympics_on_results">Winter Olympics</string>
+    <string name="title_activity_summer_olympics_q6">SummerOlympicsQ6</string>
 </resources>

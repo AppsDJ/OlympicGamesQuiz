@@ -22,6 +22,11 @@ public class QuizDataManager extends Application {
     public String[][] questionsSummerGames = new String[5][6];
     public String[][] questionsWinterGames = new String[5][6];
 
+    public String lastQuestionSummerGames = "So, what year were the first modern Summer Olympic Games held?";
+    public String lastAnswerSummerGames = "1896";
+    public String lastQuestionWinterGames = "So, what year were the first Winter Olympic games held?";
+    public String lastAnswerWinterGames = "1924";
+
     public void onCreate() {
         super.onCreate();
 
