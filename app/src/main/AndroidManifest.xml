@@ -32,7 +32,8 @@
         <activity
             android:name=".SummerOlympicsQ6"
             android:label="@string/title_activity_summer_olympics_q6"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".WinterOlympicsQ6"></activity>
     </application>
 
 </manifest>

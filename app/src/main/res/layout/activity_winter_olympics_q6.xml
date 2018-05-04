@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/quiz_start_page_bg"
-    tools:context=".SummerOlympicsQ6">
+    tools:context=".WinterOlympicsQ6">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,9 +13,9 @@
         android:layout_gravity="center_vertical">
 
         <TextView
-            android:id="@+id/header_summer"
-            android:text="@string/summer_olympics"
-            style="@style/header_summer" />
+            android:id="@+id/header_winter"
+            android:text="@string/winter_olympics"
+            style="@style/header_Winter" />
 
         <RelativeLayout
             android:id="@+id/question_area_layout"

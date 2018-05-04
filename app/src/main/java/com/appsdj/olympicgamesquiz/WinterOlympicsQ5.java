@@ -164,7 +164,7 @@ public class WinterOlympicsQ5 extends AppCompatActivity {
      * go to the quiz results
      */
     public void showQuizResults(View v) {
-        Intent intent = new Intent(this, WinterOlympicsQuizResults.class);
+        Intent intent = new Intent(this, WinterOlympicsQ6.class);
         startActivity(intent);
     }
 
