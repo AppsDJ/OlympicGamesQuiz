@@ -72,15 +72,12 @@ public class WinterOlympicsQuizResults extends AppCompatActivity {
         resultsOnToast = "\n\n" + playerFirstName + ", your score is:\n" + quizDataManager.quizScore + " out of 6";
         correctAnswersOnToast = "\n\n" + "Questions answered correctly:\n";
         incorrectAnswersOnToast = "\n\n" + "Questions answered incorrectly:\n";
-        //retrieveCorrectAnswers();
 
         if (correctAnswersString.isEmpty()) {
             correctAnswersOnToast += "None. Oh dear! Try again";
         } else {
             correctAnswersOnToast += correctAnswersString;
         }
-
-        //retrieveIncorrectAnswers();
 
         if (incorrectAnswersString.isEmpty()) {
             incorrectAnswersOnToast += "None. Well done!";

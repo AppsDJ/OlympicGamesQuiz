@@ -29,8 +29,6 @@ public class MainActivity extends AppCompatActivity {
         // ensure quiz is started with a score of 0
         quizDataManager.clearScore();
 
-        Log.v("INITIAL SCORE", "Score is: " + quizDataManager.quizScore);
-
         // start quiz on click
         startQuizOnSummerOlympics();
         startQuizOnWinterOlympics();

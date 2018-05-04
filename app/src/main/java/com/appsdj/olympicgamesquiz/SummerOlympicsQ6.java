@@ -40,8 +40,6 @@ public class SummerOlympicsQ6 extends AppCompatActivity {
     public void setUpInitialUI() {
 
         String lastQuestionSummerGames = quizDataManager.lastQuestionSummerGames;
-//        String lastQuestionWinterGames = quizDataManager.lastQuestionWinterGames;
-//        String lastAnswerWinterGames = quizDataManager.lastAnswerWinterGames;
 
         TextView questionLabel = (TextView) findViewById(R.id.question_label);
         questionLabel.setText(R.string.question6);
