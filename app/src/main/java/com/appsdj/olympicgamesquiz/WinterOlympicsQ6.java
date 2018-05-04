@@ -44,7 +44,7 @@ public class WinterOlympicsQ6 extends AppCompatActivity {
     }
 
     /**
-     * set answer "1926" as the correct answer, as in quizDataManager.lastAnswerWinterGames
+     * set answer "1924" as the correct answer, as in quizDataManager.lastAnswerWinterGames
      */
     public void setCorrectAnswer() {
         lastAnswerWinterGames = quizDataManager.lastAnswerWinterGames;
